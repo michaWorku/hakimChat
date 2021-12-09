@@ -1,0 +1,24 @@
+:root {
+  --primary-color: #8c1515;
+  --primary-color-alpha: #993337ec;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.app__wrapper {
+  display: flex;
+  flex: 1;
+  /* height: 800px; */
+  height: 100%;
+  /* border-radius: 16px; */
+  box-shadow: rgba(0, 0, 0, 0.33) 0px 1px 4px 0px;
+}
