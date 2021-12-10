@@ -15,11 +15,11 @@ const TeamChannelPreview = ({
 }) => {
   const { setIsCreating, setIsEditing } = useGlobalContext();
 
-  const { channel: activeChannel, client } = useChatContext();
+  const { channel: selectedChannel, client } = useChatContext();
   return (
     <div
       className={
-        channel?.id === activeChannel?.id
+        channel?.id === selectedChannel?.id
           ? "channel-preview__wrapper__selected"
           : "channel-preview__wrapper"
       }
