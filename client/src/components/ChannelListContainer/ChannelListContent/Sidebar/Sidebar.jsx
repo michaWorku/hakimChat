@@ -22,13 +22,13 @@ const Sidebar = () => {
 
   return (
     <div className="channel-list__sidebar">
-      <div className="channel-list__sidebar__icon1">
-        <div className="icon1__inner">
+      <div className="channel-list__sidebar__icon">
+        <div className="icon__inner">
           <img src={hospitalIcon} alt="Hospital" width="30" />
         </div>
       </div>
-      <div className="channel-list__sidebar__icon2">
-        <div className="icon2__inner" onClick={logout}>
+      <div className="channel-list__sidebar__icon">
+        <div className="icon__inner" onClick={logout}>
           <img src={logoutIcon} alt="Logout" width="30" />
         </div>
       </div>
