@@ -5,7 +5,7 @@
 }
 
 .team-channel-list__message {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.7);
   padding: 0 16px;
 }
 
@@ -26,9 +26,9 @@
 
 .team-channel-list__header__title {
   font-family: Helvetica Neue, sans-serif;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 16px;
+  line-height: 18px;
   height: 16px;
-  color: rgba(255, 255, 255, 0.66);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 10px;
 }
