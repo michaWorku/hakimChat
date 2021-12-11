@@ -25,6 +25,10 @@
   word-break: break-all;
 }
 
+.user-item__name {
+  font-weight: 500;
+}
+
 .user-item__invite-empty {
   height: 28px;
   width: 28px;
