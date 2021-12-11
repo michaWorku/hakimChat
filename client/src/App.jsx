@@ -4,13 +4,12 @@ import Cookies from "universal-cookie";
 
 import "stream-chat-react/dist/css/index.css";
 import "./App.css";
+// import "./Apptry.css";
 
 import { Auth, ChannelListContainer, ChannelContainer } from "./components";
 
 const cookies = new Cookies();
 
-require("dotenv").config();
-//const apiKey = process.env.STREAM_APP_ID;
 const apiKey = "hryu5mvyaa7m";
 const authToken = cookies.get("token");
 
