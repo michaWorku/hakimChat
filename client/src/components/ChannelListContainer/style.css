@@ -16,6 +16,11 @@
   transition: 0.8s ease;
 }
 
+.str-chat__input-flat {
+  width: 100%;
+  padding: 10px;
+}
+
 .channel-list__container-toggle {
   display: none;
   height: 50px;

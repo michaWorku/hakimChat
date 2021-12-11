@@ -26,7 +26,6 @@ const ChannelSearch = ({ setToggleContainer }) => {
         name: { $autocomplete: text },
         members: { $in: [client.userID] },
       });
-
       const userResponse = client.queryUsers({
         id: { $ne: client.userID },
         name: { $autocomplete: text },
@@ -40,6 +39,7 @@ const ChannelSearch = ({ setToggleContainer }) => {
       if (channels.length) setTeamChannels(channels);
       if (users.length) setDirectChannels(users);
     } catch (error) {
+      console.log("error===>>>", error);
       setQuery("");
     }
   };

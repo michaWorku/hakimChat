@@ -17,7 +17,7 @@
       rgba(0, 0, 0, 0.1) 12.73%,
       rgba(0, 0, 0, 0) 89.32%
     ),
-    rgba(255, 255, 255, 0.7);
+    #ffffff;
   border-radius: 100%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
 }

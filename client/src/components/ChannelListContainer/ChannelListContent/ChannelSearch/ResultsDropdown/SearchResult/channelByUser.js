@@ -11,13 +11,13 @@ export const channelByUser = async ({
   };
 
   const newChannel = client.channel("messaging", {
-    members: { $eq: [channel.id, client.userID] },
+    members: [channel.id, client.userID],
   });
-
   const [existingChannel] = await client.queryChannels(filters);
 
   if (existingChannel) return setActiveChannel(existingChannel);
 
   setChannel(newChannel);
+
   return setActiveChannel(newChannel);
 };

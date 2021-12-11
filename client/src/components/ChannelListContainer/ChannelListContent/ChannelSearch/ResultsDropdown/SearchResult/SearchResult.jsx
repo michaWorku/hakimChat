@@ -3,13 +3,13 @@ import "./style.css";
 import { Avatar, useChatContext } from "stream-chat-react";
 import { channelByUser } from "./channelByUser";
 
-const SearchResult = (
+const SearchResult = ({
   channel,
   focusedId,
   setChannel,
   type,
-  setToggleContainer
-) => {
+  setToggleContainer,
+}) => {
   const { client, setActiveChannel } = useChatContext();
 
   if (type === "channel") {
@@ -36,12 +36,7 @@ const SearchResult = (
   return (
     <div
       onClick={() => {
-        channelByUser({
-          client,
-          setActiveChannel,
-          channel,
-          setChannel,
-        });
+        channelByUser({ client, setActiveChannel, channel, setChannel });
         if (setToggleContainer) {
           setToggleContainer((prevState) => !prevState);
         }

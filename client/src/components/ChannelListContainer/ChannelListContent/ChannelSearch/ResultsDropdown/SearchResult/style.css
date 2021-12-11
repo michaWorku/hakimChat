@@ -10,11 +10,11 @@
   height: 48px;
   display: flex;
   align-items: center;
-  background: var(--primary-color-alpha);
+  background: var(--primary-color);
 }
 
 .channel-search__result-container:hover {
-  background: var(--primary-color-alpha);
+  background: var(--primary-color);
   cursor: pointer;
 }
 
@@ -37,7 +37,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 120%;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
 
 .channel-search__result-text {
@@ -46,5 +46,5 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 120%;
-  color: #2c2c30;
+  color: #000000;
 }
