@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
   border-top-right-radius: 16px;
   z-index: 1;
@@ -17,6 +17,12 @@
   align-items: center;
   justify-content: flex-end;
   text-align: right;
+}
+
+.team-channel-header__right-pin-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .team-channel-header__right svg {
@@ -31,6 +37,9 @@
 }
 
 @media screen and (max-width: 960px) {
+  .team-channeteam-channel-header__name.userl-header_menu-icon {
+    display: flex;
+  }
   .team-channel-header__container {
     height: 70px;
   }
